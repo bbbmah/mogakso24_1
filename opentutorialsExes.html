@@ -1,1 +1,54 @@
-test
+<!DOCTYPE html> <!--문서의 타입을 명시. 이 경우에는 html이다.-->
+<html><!--모든 HTML요소들을 포함하는 태그. 브라우저에게 이 문서가 HTML문서임을 알려준다.-->
+    <head> <!--문서의 내용이 아닌, 문서에 대한 메타데이터 정보의 집합을 의미하는 태그-->
+        <title>About Software and AI</title> <!--문서의 제목을 설정.-->
+        <meta charset="utf-8"><!--이 문서에 대한 정보인 메타데이터를 설정하는 태그이다. 문서의 인코딩 방식, 검색 키워드, 저자, 페이지 설명, 리다이렉트 설정 등을 할 수 있음-->
+    </head>
+
+    <body><!--실질적인 문서의 내용의 집합을 의미하는 태그-->
+        <h1>인공지능 Artificial intelligence</h1><!--타이틀을 의미하는 태그. h1~h6까지 존재하며 숫자가 커질수록 글자의 크기는 작아진다.-->
+        <a href="https://www.ajou.ac.kr/kr/index.do" target="_blank" title="Ajou Univ Page">Ajou Univ</a> <!--페이지에 하이퍼링크를 추가함. href키워드로 연결할 링크를 명시. target 키워드로 페이지가 어디서 열릴 지 설정 가능.(blank는 새 탭). title 태그로 링크의 이름 설정 가능-->
+        Software <u><strong>Mogakso 24_1</strong></u> <!--밑줄 및 굵은 문자 표시 태그들-->
+        <br><br> <!--줄바꿈 태그. 다른 태그와 다르게 닫는 태그가 없다.-->
+        컴퓨터 소프트웨어(computer software, 혹은 간단히 소프트웨어, 문화어: 쏘프트웨어, 순화 용어: 무른모)는 컴퓨터에게 동작 방법을 지시하는 명령어 집합의 모임이다. 프로그램 소프트웨어는 컴퓨터 하드웨어에 직접 명령어를 주거나 다른 소프트웨어에 입력을 제공함으로써, 명령어의 기능을 수행한다. 컴퓨터 소프트웨어는 컴퓨터 하드웨어의 반대 의미로, 컴퓨터 하드웨어는 해당 일을 실제로 수행하는 시스템이다. 쉽게 설명하자면 생명체를 하드웨어라고 가정한다면, 그를 구성하는 유전자가 소프트웨어라고 생각할 수 있다.
+
+        <p>인공지능(人工智能, 영어: artificial intelligence, AI)은 인간의 학습능력, 추론능력, 지각능력을 인공적으로 구현하려는 컴퓨터 과학의 세부분야 중 하나이다. 정보공학 분야에 있어 하나의 인프라 기술이기도 하다. 인간을 포함한 동물이 갖고 있는 지능 즉, 자연 지능(natural intelligence)과는 다른 개념이다</p> <!--단락을 지정하는 태그. 줄바꿈 br태그와 비슷하지만 단락구분에 용이하다. 하지만 br에 비해 자유도는 떨어지는 편이다.-->
+
+        <p style="margin-top: 45px;">인간의 지능을 모방한 기능을 갖춘 컴퓨터 시스템이며, 인간의 지능을 기계 등에 인공적으로 시연(구현)한 것이다. 일반적으로 범용 컴퓨터에 적용한다고 가정한다. 이 용어는 또한 그와 같은 지능을 만들 수 있는 방법론이나 실현 가능성 등을 연구하는 과학 기술 분야를 지칭하기도 한다.</p> <!--단락 태그의 부족한 자유도를 CSS를 이용해 보완한 모습이다. 단락 위쪽의 여백을 45픽셀로 늘려 구조상의 조정을 했다.-->
+
+        <img src="https://i.namu.wiki/i/TNxsCMAu_nhnuIGUj4m8A6dKW2DcdgYMKEvhsb1CUoRSrvZKzAH58zoyXvRHdGDjXkZkmZZOukE33pMWfKQEwaLFrCX0YvMMB-soIEDyQS2kCsB2dffPaaaZmWLSDHl7W6s-u4BJl8XEaHLUkyHcFg.webp" width="50%">
+        <!--페이지에 이미지를 추가하는 img 태그, 그 속의 속성을 결정하는 src 키워드를 통해 이미지를 추가한다. width 키워드로 이미지의 크기를 조정한다.-->
+
+        <br><br>
+        <li>1. Software</li> <!--목록을 만들 때 사용하는 태그.-->
+        <li>2. AI</li>
+        <li>3. DeepLearning</li>
+
+        <ul> <!--각각의 목록들을 묶어 구분하기 위해 li태그 밖에 씌우는 태그.-->
+            <li>1. Dog</li>
+            <li>2. Cat</li>
+            <li>3. Bear</li>
+        </ul>
+        <!--ul - 순서가 없는 목록, ol - 순서가 있는 목록-->
+        <ol>
+            <li>car</li>
+            <li>bike</li>
+            <li>walk</li>
+        </ol>
+
+        <div class="shadow-box">
+            <p>박스</p>
+        </div>
+        <style>
+            .shadow-box{
+                border-radius: 25px;
+                padding: 2.5em;
+                box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: gold;
+            }
+        </style>
+    </body>
+</html>
